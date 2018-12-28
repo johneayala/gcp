@@ -16,7 +16,7 @@ def main(project, zone):
 
     instances = list_instances(compute, project, zone)
 
-    print('Instances in project %s and zone %s:' % (project, zone))
+    print('Instances in project: %s and zone: %s:' % (project, zone))
     for instance in instances:
         print(' - ' + instance['name'])
 
